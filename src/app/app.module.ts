@@ -17,6 +17,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { FoodComponent } from './food/food.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     HomeComponent,
     BannerComponent,
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    FoodComponent
   ],
   imports: [
     BrowserModule,

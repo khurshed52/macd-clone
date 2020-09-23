@@ -9,13 +9,15 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 })
 export class MenuComponent implements OnInit {
   public menu:any;
+  public loading = true;
   constructor(private _menu: MenuService, private snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
     this._menu.getBreakFast().subscribe(
       res =>{
         console.log(res);
-        this.menu = res
+        this.menu = res;
+        this.loading = false
       }
     )
   }

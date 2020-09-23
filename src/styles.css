@@ -160,5 +160,14 @@ button:focus {
 	.tp-card {
 		margin-bottom: 1rem;
 	 }
+
+	 video {
+		height: auto !important; 
+	}
+
+	#video h1 {
+		font-size: 2em !important;
+    	line-height: 40px !important
+	}
 	
 }

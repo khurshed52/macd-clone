@@ -1,0 +1,36 @@
+#video {
+    position: relative;
+    overflow: hidden;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+#video:before {
+    content: '';
+    background: #00000052 url(https://jaysalvat.github.io/vegas/releases/latest/overlays/02.png);
+    background-repeat: repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+video {
+    position: relative;
+    z-index: -100;
+    object-fit: initial;
+    width: 100%;
+    height: 550px;
+}
+
+#video h1 {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    text-align: center;
+    line-height: 80px;
+    font-family: 'MuseoModerno', cursive;
+}
