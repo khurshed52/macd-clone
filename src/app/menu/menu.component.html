@@ -31,7 +31,7 @@
                         </div>
                     </div> -->
                     <div class="mini_btn">
-                        <button mat-mini-fab color="accent" matTooltip="Favourite">
+                        <button mat-mini-fab color="accent" (click)="openSnackBar('Favourite', 'added')" matTooltip="Favourite">
                             <i class='bx bx-heart'></i>
                           </button>
                           <button mat-mini-fab color="primary" matTooltip="Share">
