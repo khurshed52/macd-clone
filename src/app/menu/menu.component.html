@@ -1,0 +1,93 @@
+<div class="container">
+    <mat-tab-group>
+        <mat-tab label="Breakfast">
+            <mat-card class="tp-card" *ngFor="let menuItem of menu">
+                <mat-card-header>
+                   <mat-card-title>{{menuItem.name}}</mat-card-title>
+                </mat-card-header>
+                <div class="card_img">
+                    <img mat-card-image [src]='menuItem.url' alt="image">
+                </div>
+                <mat-card-actions>
+                    <div>
+                        <button mat-raised-button color="accent" matTooltip="Info"  data-toggle="modal" [attr.data-target]="'#myModal'+ menuItem._id">View</button>
+                    </div>
+                    <!-- Modal
+                    <div class="modal fade"  [attr.id]="'myModal' + menuItem._id"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h2 class="modal-title" id="exampleModalLabel">{{menuItem.name}}</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <img [src]='menuItem.url' alt="image">
+                                <h2> Cal : {{menuItem.cal}} K</h2>
+                                <p> {{menuItem.details}}</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div> -->
+                    <div class="mini_btn">
+                        <button mat-mini-fab color="accent" matTooltip="Favourite">
+                            <i class='bx bx-heart'></i>
+                          </button>
+                          <button mat-mini-fab color="primary" matTooltip="Share">
+                            <i class='bx bx-share-alt'></i>
+                          </button>
+                    </div>
+                </mat-card-actions>
+            </mat-card> 
+        </mat-tab>
+        <mat-tab label="Burgers">
+            Content 1 
+        </mat-tab>
+        <mat-tab label="Chicken & Sandwiches">
+            Content 1 
+        </mat-tab>
+        <mat-tab label="Extra Value Meal">
+            Content 1 
+        </mat-tab>
+        <mat-tab label="Signature Collection">
+            Content 1 
+        </mat-tab>
+        <mat-tab label="Snacks & Sides">
+            Content 1 
+        </mat-tab>
+        <mat-tab label="Desserts">
+            Content 1 
+        </mat-tab>
+        <mat-tab label="Beverages">
+            Content 1 
+        </mat-tab>
+        <mat-tab label="McCafe">
+            Content 1 
+        </mat-tab>
+        <mat-tab label="Happy Meal">
+            Content 1 
+        </mat-tab>
+    </mat-tab-group>
+</div>
+
+<div *ngFor="let menuItem of menu">
+     <div class="modal right fade" [attr.id]="'myModal' + menuItem._id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">{{menuItem.name}}</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img [src]='menuItem.url' alt="image">
+            <h2> Cal : {{menuItem.cal}} K</h2>
+            <p> {{menuItem.details}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 

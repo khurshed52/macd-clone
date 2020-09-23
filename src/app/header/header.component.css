@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background: #1b1a1a;
+}
+
+.logo img {
+    width: 36px;
+}
+
+.right_area mat-toolbar {
+    color: #ffffff;
+}

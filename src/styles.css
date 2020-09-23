@@ -1,1 +1,164 @@
-/* You can add global styles to this file, and also import other style files */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background: url('./assets/images/bg.png');
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+button.owl-prev {
+    position: absolute;
+    left: 20px;
+}
+
+button.owl-next {
+    position: absolute;
+    right: 20px;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    position: absolute;
+	top: 50%;
+	width: 100%;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    font-size: 100px !important;
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+button:focus {
+	outline: 0 !important;
+}
+
+.mat-tab-label {
+	border-right: 1px solid #d8c8c8;
+}
+
+.mat-tab-body-content {
+	margin: 1rem 0 1rem 0;
+	height: auto !important;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.modal.left .modal-dialog,
+	.modal.right .modal-dialog {
+		position: fixed;
+		margin: auto;
+		width: 320px;
+		height: 100%;
+		-webkit-transform: translate3d(0%, 0, 0);
+		    -ms-transform: translate3d(0%, 0, 0);
+		     -o-transform: translate3d(0%, 0, 0);
+		        transform: translate3d(0%, 0, 0);
+	}
+
+	.modal.left .modal-content,
+	.modal.right .modal-content {
+		height: 100%;
+		overflow-y: auto;
+	}
+	
+	.modal.left .modal-body,
+	.modal.right .modal-body {
+		padding: 15px 15px 80px;
+	}
+
+        
+/*Right*/
+	.modal.right.fade .modal-dialog {
+		right: -320px;
+		-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+		        transition: opacity 0.3s linear, right 0.3s ease-out;
+	}
+	
+	.modal.right.fade.show .modal-dialog {
+		right: 0;
+	}
+
+.modal-content {
+	border-radius: 0!important;
+    outline: 0;
+    -webkit-box-shadow: 0 7px 8px -4px rgba(0,0,0,.2), 0 13px 19px 2px rgba(0,0,0,.14), 0 5px 24px 4px rgba(0,0,0,.12);
+    box-shadow: 0 7px 8px -4px rgba(0,0,0,.2), 0 13px 19px 2px rgba(0,0,0,.14), 0 5px 24px 4px rgba(0,0,0,.12);
+    border: 0!important
+	}
+
+	.modal-header {
+		padding: 0.8rem !important;
+	}
+	.modal-header h2 {
+		margin: 0px;
+		font-size: 16px;
+	}
+
+	.modal-body img {
+		width: 100% !important;
+		margin-bottom: 1rem;
+	}
+
+	.mat-tab-header-pagination {
+		z-index: 1 !important;
+	}
+
+/**********responsive css********/
+
+@media only screen and (max-width:767px) {
+	.mat-tab-body-content {
+		justify-content: center !important; 
+	}
+
+	.tp-card {
+		margin-bottom: 1rem;
+	 }
+	
+}
