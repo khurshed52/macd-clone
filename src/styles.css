@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'museomodernoregular';
+    src: url('./assets/fonts/museomoderno-webfont.woff2') format('woff2'),
+         url('./assets/fonts/museomoderno-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -168,6 +177,15 @@ button:focus {
 	#video h1 {
 		font-size: 2em !important;
     	line-height: 40px !important
+	}
+
+	.owl-nav {
+		top: 25% !important
+	}
+
+	.order_btn {
+		font-size: 1rem !important;
+    	padding: 0.5rem 2rem !important
 	}
 	
 }

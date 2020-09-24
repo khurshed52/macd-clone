@@ -23,14 +23,26 @@ video {
     height: 550px;
 }
 
-#video h1 {
+#video .content {
     position: absolute;
-    color: #fff;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#video h1 {
+    color: #fff;
     font-size: 5em;
     text-align: center;
     line-height: 80px;
-    font-family: 'MuseoModerno', cursive;
+    font-family: 'museomodernoregular' !important;
+}
+
+.order_btn {
+    border-radius: 30px;
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    font-family: 'museomodernoregular' !important;
+    margin-top: 1rem;
 }

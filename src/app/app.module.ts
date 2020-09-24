@@ -18,6 +18,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FoodComponent } from './food/food.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogBodyComponent } from './dialog-body/dialog-body.component';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import { FoodComponent } from './food/food.component';
     BannerComponent,
     HeaderComponent,
     MenuComponent,
-    FoodComponent
+    FoodComponent,
+    DialogBodyComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +44,12 @@ import { FoodComponent } from './food/food.component';
     MatMenuModule,
     MatToolbarModule,
     HttpClientModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatDialogModule,
+    MatInputModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DialogBodyComponent]
 })
 export class AppModule { }
