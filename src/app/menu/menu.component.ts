@@ -28,4 +28,6 @@ export class MenuComponent implements OnInit {
     });
  } 
 
+  defaultImage = '../../assets/images/animated_spinner.gif';
+  dImage = '../../assets/images/logo.svg';
 }

@@ -21,7 +21,7 @@ import { FoodComponent } from './food/food.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogBodyComponent } from './dialog-body/dialog-body.component';
 import {MatInputModule} from '@angular/material/input';
-
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +46,8 @@ import {MatInputModule} from '@angular/material/input';
     HttpClientModule,
     MatSnackBarModule,
     MatDialogModule,
-    MatInputModule
+    MatInputModule,
+    LazyLoadImageModule
   ],
   providers: [],
   bootstrap: [AppComponent],

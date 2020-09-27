@@ -2,7 +2,7 @@
     <mat-tab-group>
         <mat-tab label="Breakfast">
             <div class="loading text-center" *ngIf="loading else loaded">
-                <img src="assets/images/logo.svg" alt="loader"/>
+                <img [defaultImage]="defaultImage" [lazyLoad]="dImage" alt="loader"/>
             </div>
                 <ng-template #loaded>
                     <mat-card class="tp-card" *ngFor="let menuItem of menu">
@@ -10,7 +10,7 @@
                            <mat-card-title>{{menuItem.name}}</mat-card-title>
                         </mat-card-header>
                         <div class="card_img">
-                            <img mat-card-image [src]='menuItem.url' alt="image">
+                            <img mat-card-image [src]='menuItem.url' alt="image" [defaultImage]="defaultImage" [lazyLoad]='menuItem.url'> 
                         </div>
                         <mat-card-actions>
                             <div>
@@ -87,7 +87,7 @@
           </button>
         </div>
         <div class="modal-body">
-            <img [src]='menuItem.url' alt="image">
+            <img [defaultImage]="defaultImage" [lazyLoad]='menuItem.url' alt="image">
             <h2> Cal : {{menuItem.cal}} K</h2>
             <p> {{menuItem.details}}</p>
         </div>
@@ -95,4 +95,3 @@
     </div>
   </div>
 </div>
- 
