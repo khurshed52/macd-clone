@@ -1,22 +1,27 @@
+<div class="icon-inner" mat-dialog-close><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="s-ion-icon"><path d="M256 48C140.559 48 48 140.559 48 256c0 115.436 92.559 208 208 208 115.435 0 208-92.564 208-208 0-115.441-92.564-208-208-208zm104.002 282.881l-29.12 29.117L256 285.117l-74.881 74.881-29.121-29.117L226.881 256l-74.883-74.881 29.121-29.116L256 226.881l74.881-74.878 29.12 29.116L285.119 256l74.883 74.881z"></path></svg></div>
 <h2 mat-dialog-title class="text-center">Where will you receive your Burger?</h2>
 <mat-dialog-content class="delivery mat-typography text-center">
     <img src="https://media.giphy.com/media/cmCHuk53AiTmOwBXlw/giphy.gif" alt="deleivery"/>
-    <form class="example-form">
+    <form class="example-form" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <div>
+        <ng-select placeholder="Select City" [items]="people"
+           bindLabel="name" formControlName="city" #city> </ng-select>
+      </div>
         <mat-form-field class="example-full-width">
           <mat-label>Your Name </mat-label>
-          <input matInput>
+          <input matInput formControlName="name" #name>
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
           <mat-label>Phone </mat-label>
-           <input matInput>
+           <input matInput formControlName="phone" #phone>
         </mat-form-field>
       
         <mat-form-field class="example-full-width">
           <mat-label>Address</mat-label>  
-          <textarea matInput></textarea>
+          <textarea matInput formControlName="address" #address></textarea>
         </mat-form-field>
-        <button mat-raised-button class="w-100" color="accent">Order</button>
+        <button mat-raised-button class="w-100" color="accent" [disabled]="myForm.pristine || myForm.invalid" type="submit" mat-dialog-close>Order</button>
       </form>
 </mat-dialog-content>
 <mat-dialog-actions align="end">

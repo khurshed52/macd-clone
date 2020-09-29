@@ -22,6 +22,10 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { DialogBodyComponent } from './dialog-body/dialog-body.component';
 import {MatInputModule} from '@angular/material/input';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { DealsComponent } from './deals/deals.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +34,8 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     HeaderComponent,
     MenuComponent,
     FoodComponent,
-    DialogBodyComponent
+    DialogBodyComponent,
+    DealsComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +52,9 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     MatSnackBarModule,
     MatDialogModule,
     MatInputModule,
-    LazyLoadImageModule
+    LazyLoadImageModule,
+    NgSelectModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

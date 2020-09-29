@@ -11,3 +11,13 @@
     max-width: 500px;
     width: 100%;
   }
+
+  .icon-inner {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+  .icon-inner svg {
+    width: 20px;
+  }
