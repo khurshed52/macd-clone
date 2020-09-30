@@ -190,5 +190,15 @@ button:focus {
 		font-size: 1rem !important;
     	padding: 0.5rem 2rem !important
 	}
+
+	.item h1  {
+		font-size: 1em !important;
+	}
+
+	.book_btn {
+		font-size: 1rem !important;
+		padding: 0rem 1rem !important;
+		margin: 0 !important;
+	}
 	
 }

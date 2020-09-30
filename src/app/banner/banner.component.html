@@ -1,5 +1,9 @@
 <owl-carousel [options]="SlideOptions" [carouselClasses]="['owl-theme', 'sliding']" >  
     <div class="item" *ngFor="let img of Images">   
-        <img src={{img.images}} alt="{{img.alt}}"/>  
+        <img src={{img.images}} alt="{{img.alt}}"/> 
+        <div class="text_area">
+            <h1>{{img.text}}</h1>
+        <button mat-raised-button color="accent" class="book_btn" (click)="openDialog()">Book Table </button>
+        </div>
     </div>    
 </owl-carousel>  

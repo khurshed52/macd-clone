@@ -14,16 +14,16 @@ export class BannerComponent implements OnInit {
 
   public Images = [
     {
-      images: '../../assets/images/slide-1.jpg', alt:'banner'
+      images: '../../assets/images/slide-1.jpg', alt:'banner', text: 'Deliciously MouthWatering Burgers'
     },
     {
-      images: '../../assets/images/slide-2.jpg', alt:'banner'
+      images: '../../assets/images/slide-2.jpg', alt:'banner', text: 'Deliciously MouthWatering Burgers'
     },
     {
-      images: '../../assets/images/slide-3.jpg', alt:'banner'
+      images: '../../assets/images/slide-3.jpg', alt:'banner', text: 'Deliciously MouthWatering Burgers'
     },
     {
-      images: '../../assets/images/slide-4.jpg', alt:'banner'
+      images: '../../assets/images/slide-4.jpg', alt:'banner', text: 'Deliciously MouthWatering Burgers'
     }
   ]
 
