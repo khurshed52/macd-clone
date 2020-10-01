@@ -5,13 +5,13 @@
     </div>
     <div class="right_area">
         <!-- <a> Contact </a> -->
-        <!-- <mat-toolbar>
-        <button mat-button [matMenuTriggerFor]="menu">Language</button>
+  
+        <button mat-raised-button mat-button [matMenuTriggerFor]="menu"> <i class='bx bx-globe'></i> Language</button>
             <mat-menu #menu="matMenu">
-            <button mat-menu-item>English</button>
-            <button mat-menu-item>Arabic</button>
+            <button mat-menu-item><span class="s32 flag-icon flag-icon-us"></span>English</button>
+            <button mat-menu-item><span class="s32 flag-icon flag-icon-ae"></span>Arabic</button>
             </mat-menu>
-        </mat-toolbar> -->
+        
         <button mat-raised-button color="accent" (click)="openDialog()">  <i class='bx bx-box'></i> Order on Delivery </button>
         <!-- <nav>
             <input id="open" type="checkbox">

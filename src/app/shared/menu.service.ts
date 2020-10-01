@@ -9,7 +9,7 @@ export class MenuService {
 
   constructor(private http: HttpClient) { }
 
-  private breakfastUrl = 'https://macd-api.herokuapp.com/breakfast';
+  private breakfastUrl = 'https://macd-api.herokuapp.com/api/breakfast';
 
   public getBreakFast():Observable<any>{
     return this.http.get<any>(this.breakfastUrl)

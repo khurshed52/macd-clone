@@ -32,7 +32,8 @@
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "./node_modules/boxicons/css/boxicons.css",
               "./node_modules/sweetalert2/dist/sweetalert2.min.css",
-              "./node_modules/sal.js/dist/sal.css"
+              "./node_modules/sal.js/dist/sal.css",
+              "./node_modules/flag-icon-css/css/flag-icon.min.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",

@@ -25,6 +25,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { DealsComponent } from './deals/deals.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MenuComponent,
     FoodComponent,
     DialogBodyComponent,
-    DealsComponent
+    DealsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
