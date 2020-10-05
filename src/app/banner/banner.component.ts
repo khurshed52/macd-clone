@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DialogBodyComponent } from '../dialog-body/dialog-body.component';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-banner',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BannerComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -29,5 +31,11 @@ export class BannerComponent implements OnInit {
 
   SlideOptions = {items: 1, dots: true, nav: false , autoplay: true, smartSpeed:1000, autoplayTimeout:3000, loop: true};  
   CarouselOptions = { items: 3, dots: true, nav: false };
+
+  public openDialog() {
+    this.dialog.open(DialogBodyComponent, {
+      width:'500px'
+    })
+  }
 
 }

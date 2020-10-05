@@ -5,3 +5,72 @@ footer {
     margin-top: 2rem;
     color: #ffffff;
 }
+
+.deliver ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.deliver ul  li a i {
+    font-size: 1.5rem;
+    vertical-align: bottom;
+}
+
+.deliver ul  li a {
+    background: #302f46;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.deliver ul  li a:hover {
+    background-color: #252437;
+    border: 1px solid #fff;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: #302f46;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    outline: none;
+    border-radius: .3rem;
+    border-radius: .3rem;
+}
+
+summary:hover {
+    background: #353447;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    from {
+        opacity: 0; margin-top: -10px;
+    }
+
+    to {
+        opacity: 1; margin-top: 0px;
+    }
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details > summary::after {
+    content: "+";
+  }
+
+  details[open] > summary::after {
+    content: "-";
+  }

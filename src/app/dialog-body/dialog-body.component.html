@@ -5,21 +5,21 @@
     <form class="example-form" [formGroup]="myForm" (ngSubmit)="onSubmit()">
       <div>
         <ng-select placeholder="Select City" [items]="people"
-           bindLabel="name" formControlName="city" #city> </ng-select>
+           bindLabel="name" formControlName="city" #city required> </ng-select>
       </div>
         <mat-form-field class="example-full-width">
           <mat-label>Your Name </mat-label>
-          <input matInput formControlName="name" #name>
+          <input matInput formControlName="name" #name required>
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
           <mat-label>Phone </mat-label>
-           <input matInput formControlName="phone" #phone>
+           <input matInput formControlName="phone" #phone required>
         </mat-form-field>
       
         <mat-form-field class="example-full-width">
           <mat-label>Address</mat-label>  
-          <textarea matInput formControlName="address" #address></textarea>
+          <textarea matInput formControlName="address" #address required></textarea>
         </mat-form-field>
         <button mat-raised-button class="w-100" color="accent" [disabled]="myForm.pristine || myForm.invalid" type="submit" mat-dialog-close>Order</button>
       </form>
