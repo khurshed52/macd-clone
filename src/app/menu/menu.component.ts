@@ -9,6 +9,7 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 })
 export class MenuComponent implements OnInit {
   public menu:any;
+  public burgers:any;
   public loading = true;
   constructor(private _menu: MenuService, private snackBar: MatSnackBar) { }
 
@@ -18,6 +19,13 @@ export class MenuComponent implements OnInit {
         console.log(res);
         this.menu = res;
         this.loading = false
+      }
+    )
+
+    this._menu.getBurger().subscribe(
+      res=> {
+        console.log(JSON.stringify(res));
+        this.burgers = res
       }
     )
   }
